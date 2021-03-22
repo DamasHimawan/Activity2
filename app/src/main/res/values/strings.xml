@@ -1,6 +1,16 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Sample Linear Layout</string>
-    <string name="tEmail">Email</string>
-    <string name="tPassword">Password</string>
+    <string name="var1">ini pesan</string>
     <string name="bsignin">Sign-In</string>
+    <string name="tLogin">LOGIN</string>
+    <string name="tData">Data Diri</string>
+    <string name="tEmail">Email: </string>
+    <string name="tPassword">Password: </string>
+    <string name="txemail">Ini hasil email</string>
+    <string name="txPassword">Ini Hasil Password</string>
+    <string name="Label2">Login Berhasil</string>
 </resources>
+
+
+
+

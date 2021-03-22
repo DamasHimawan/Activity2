@@ -35,14 +35,35 @@ public class MainActivity extends AppCompatActivity {
                 nama = edemail.getText().toString();
                 password = edpassword.getText().toString();
 
-                if(edemail.getText().toString().equals("admin@mail.com")&&edpassword.getText().toString().equals("123")) {
+                String email = "admin@mail.com";
+                String password = "123";
+
+                if(edemail.getText().toString().equals("admin@mail.com") && edpassword.getText().toString().equals("123")) {
                     Toast t = Toast.makeText(getApplicationContext(),
                             "LOGIN SUKSES || email : " + nama + " password : " + password + "", Toast.LENGTH_LONG);
                     t.show();
+                }else {
+                    if (nama.equals(email) && password.equals(password)) {
+                        Toast t = Toast.makeText(getApplicationContext(),
+                                 "LOGIN SUKSES"
+                                 Toast.LENGTH_LONG
+                        t.show();
+
+                        Bundle b = new Bundle();
+
+                        b.putString("a", nama.trim());
+                        b.putString("b", password());
+
+                        intent i = new Intent(getApplicationContext(),
+                                ActivityHasil.class);
+                        ((Intent) i).putExtras(b);
+                        startActivity(i);
                 }
                 else{
-                    Toast.makeText((getApplicationContext()), "Username atau Password Anda salah",
+                    Toast.makeText((getApplicationContext()),
+                            "LOGIN GAGAL",
                             Toast.LENGTH_SHORT).show();
+                    t.show();
                 }
             }
         });
