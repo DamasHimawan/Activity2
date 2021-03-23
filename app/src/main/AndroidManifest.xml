@@ -8,8 +8,11 @@ package="com.example.linearlayout">
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.LinearLayout">
+    <activity androis:name=".DaftarActivity"
+        android:parentActivityname=".MainActivity"
+
     <activity
-        android:name=".MainActivity"
+        android:name=".ActivityHasil"
         android:parentActivityName=".MainActivity"
         android:label="@string/Label2"></activity>
     <activity android:name=".MainActivity">
